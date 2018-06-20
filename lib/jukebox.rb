@@ -44,11 +44,16 @@ end
 
 def run 
   help
-  puts "Please enter a command:"
-  command = gets.chomp
   prompt = nil
   while prompt != "exit" do 
       puts "Please enter a command:"
-      command = gets.chomp
+      prompt = gets.chomp
+      if prompt == "list" 
+        list(songs)
+      elsif prompt == "play"
+        play(songs)
+      elsif prompt == "help"
+        help
+      end
   end
 end
