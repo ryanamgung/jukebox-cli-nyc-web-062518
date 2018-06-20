@@ -20,9 +20,8 @@ def help
 end
 
 def list(songs)
-  count = 1
-  songs.each do |element|
-    puts "#{count}. #{element}"
+  songs.each_with_index do |element, index|
+    puts "#{index}. #{element}"
   end
 end
 
