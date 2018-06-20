@@ -11,6 +11,12 @@ songs = [
 ]
 
 def help
-  
+  puts "displays this help message"
 end
 
+def list(songs)
+  count = 1
+  songs.each do |element|
+    puts "#{count}. #{element}"
+  end
+end
