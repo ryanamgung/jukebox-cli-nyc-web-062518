@@ -42,7 +42,7 @@ def exit_jukebox
   puts "Goodbye"
 end
 
-def run 
+def run
   help
   prompt = nil
   while prompt != "exit" do 
