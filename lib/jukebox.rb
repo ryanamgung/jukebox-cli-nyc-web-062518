@@ -30,7 +30,7 @@ def play(songs)
   puts "Please enter a song name or number:"
   input = gets.chomp
   songs.each do |song|
-    if input == song
+    if input == song || input == song.
       puts "Playing #{song}"
       return
     end
