@@ -48,6 +48,7 @@ def run
   command = gets.chomp
   prompt = nil
   while prompt != "exit" do 
-    
+      puts "Please enter a command:"
+      command = gets.chomp
   end
 end
